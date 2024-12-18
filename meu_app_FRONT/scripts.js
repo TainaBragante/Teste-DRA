@@ -3,7 +3,7 @@
   URL base para comunicação com o backend via ngrok
   --------------------------------------------------------------------------------------
 */
-const baseURL = 'http://127.0.0.1:5000';
+const baseURL = 'https://flask-api-comissao.onrender.com';
 
 /*
   --------------------------------------------------------------------------------------
