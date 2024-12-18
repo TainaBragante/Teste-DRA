@@ -6,6 +6,7 @@ from model import Session, Funcionario
 from logger import logger
 from schemas import *
 from flask_cors import CORS
+import os
 
 
 info = Info(title="Minha API", version="1.0.0")
@@ -143,3 +144,7 @@ def del_funcionario(query: FuncionarioBuscaSchema):
         logger.warning(f"Erro ao deletar funcionario #'{funcionario_nome}', {error_msg}")
         return {"mesage": error_msg}, 404
 
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Pega a porta da variável PORT ou usa 5000 como padrão
+    app.run(host="0.0.0.0", port=port)
