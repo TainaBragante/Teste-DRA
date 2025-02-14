@@ -1,6 +1,6 @@
 /*
   --------------------------------------------------------------------------------------
-  URL base para comunicação com o backend via ngrok
+  URL base para comunicação com o backend 
   --------------------------------------------------------------------------------------
 */
 const baseURL = 'https://flask-api-comissao.onrender.com';
